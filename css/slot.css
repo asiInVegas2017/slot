@@ -7,11 +7,11 @@ body {
   width: 435px;
   padding-top: 100px;
   margin: auto;
-  -webkit-transform: perspective(700) rotateY(-30deg) translate3d(0, 0, 0);
-  -moz-transform: perspective(700) rotateY(-30deg) translate3d(0, 0, 0);
-  -ms-transform: perspective(700) rotateY(-30deg) translate3d(0, 0, 0);
-  -o-transform: perspective(700) rotateY(-30deg) translate3d(0, 0, 0);
-  transform: perspective(700) rotateY(-30deg) translate3d(0, 0, 0);
+  -webkit-transform: perspective(600) rotateY(0deg) translate3d(0, 0, 0);
+  -moz-transform: perspective(600) rotateY(0deg) translate3d(0, 0, 0);
+  -ms-transform: perspective(600) rotateY(0deg) translate3d(0, 0, 0);
+  -o-transform: perspective(600) rotateY(0deg) translate3d(0, 0, 0);
+  transform: perspective(600) rotateY(00deg) translate3d(0, 0, 0);
   -webkit-transform-origin: 50% 50%;
   -moz-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
@@ -28,11 +28,11 @@ body {
   -moz-transition: -moz-transform 3600ms;
   -o-transition: -o-transform 3600ms;
   transition: transform 3600ms;
-  -webkit-transform: perspective(700) rotateY(330deg) translate3d(0, 0, 0);
-  -moz-transform: perspective(700) rotateY(330deg) translate3d(0, 0, 0);
-  -ms-transform: perspective(700) rotateY(330deg) translate3d(0, 0, 0);
-  -o-transform: perspective(700) rotateY(330deg) translate3d(0, 0, 0);
-  transform: perspective(700) rotateY(330deg) translate3d(0, 0, 0);
+  -webkit-transform: perspective(600) rotateY(360deg) translate3d(0, 0, 0);
+  -moz-transform: perspective(600) rotateY(360deg) translate3d(0, 0, 0);
+  -ms-transform: perspective(600) rotateY(360deg) translate3d(0, 0, 0);
+  -o-transform: perspective(600) rotateY(360deg) translate3d(0, 0, 0);
+  transform: perspective(600) rotateY(360deg) translate3d(0, 0, 0);
 }
 #page * {
   -webkit-transform: translate3d(0, 0, 0);
@@ -533,7 +533,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b59900', end
   position: absolute;
   top: 0;
   left: 0;
-  background: #babcbd;
+  background: -moz-linear-gradient(90deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(128,128,128,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(100%, rgba(192,192,192,1))); /* safari4+,chrome */
+background: -webkit-linear-gradient(90deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(90deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(90deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%); /* ie10+ */
+background: linear-gradient(0deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808080', endColorstr='#c0c0c0',GradientType=0 ); /* ie6-9 */
 }
 #slot .bottom-box > .side.top, #slot .bottom-box > .side.bottom {
   width: 435px;
@@ -561,7 +567,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b59900', end
 #slot .bottom-box > .side.front, #slot .bottom-box > .side.back {
   width: 435px;
   height: 145px;
-  background: #6c6f72;
+  background: -moz-linear-gradient(90deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(128,128,128,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(100%, rgba(192,192,192,1))); /* safari4+,chrome */
+background: -webkit-linear-gradient(90deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(90deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(90deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%); /* ie10+ */
+background: linear-gradient(0deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808080', endColorstr='#c0c0c0',GradientType=0 ); /* ie6-9 */
 }
 #slot .bottom-box > .side.front {
   -webkit-transform: translate3d(0, 0, 145px);
@@ -660,7 +672,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b59900', end
   left: 50%;
   margin-top: -3px;
   margin-left: -37.5px;
-  background: #aa0000;
+  background: #ffff00;
+;
 }
 #play > .side.top {
   -webkit-transform: rotateX(-90deg) translate3d(0, 0, -15px);
@@ -679,7 +692,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b59900', end
 #play > .side.front, #play > .side.back {
   width: 75px;
   height: 30px;
-  background: #dd0000;
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,0,1) 100%); /* ff3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,0,1))); /* safari4+,chrome */
+background:-webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,0,1) 100%); /* safari5.1+,chrome10+ */
+background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,0,1) 100%); /* opera 11.10+ */
+background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,0,1) 100%); /* ie10+ */
+background:radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,255,0,1) 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffff00',GradientType=1 ); /* ie6-9 */
 }
 #play > .side.front {
   -webkit-transform: translate3d(0, 0, 3px);
@@ -692,7 +711,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b59900', end
   font-size: 24px;
   font-weight: 900;
   letter-spacing: 3px;
-  color: #ff7777;
+  color: #ff0000;
 }
 #play > .side.back {
   -webkit-transform: translate3d(0, 0, -3px);
@@ -708,7 +727,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b59900', end
   left: 50%;
   margin-top: -15px;
   margin-left: -3px;
-  background: #440000;
+  background: #ffff00;
 }
 #play > .side.left {
   -webkit-transform: rotateY(-90deg) translate3d(0, 0, -37.5px);

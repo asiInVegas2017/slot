@@ -33,7 +33,7 @@
     var creditBox = $('#credits');
     var play = $('#play');
     var wheels = $('.wheel');
-    creditBox.html("SPIN: ");
+    creditBox.html("SPIN");
 
     //control turning
 
