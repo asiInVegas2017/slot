@@ -11,7 +11,7 @@
   ];
   var result = [];
   var count = 0;
-  var max = 320;
+  var max = 231;
 
   var endSpin = function (el, match, winBox) {
     var ended = 0;
