@@ -13,13 +13,14 @@
   var count = 0;
   var max = 232;
 
-  var endSpin = function (el, match, winBox) {
+  var endSpin = function (el, match, winBox, creditBox) {
     var ended = 0;
    	
     el.on(transitionend, function () {
       ended++;
       if(ended === 3) {
-       winBox.html(match);
+        winBox.html(match);
+		creditBox.html("WIN");
       }
 	  
     });
@@ -70,7 +71,10 @@
 	var zero = 0;
 	var spinPlus = 0;
 	play.on('click', function () {
-	
+		
+		  creditBox.html("SPIN");
+          winBox.html("");
+		  
 	      var type = 0;
 		  
 		  do {
@@ -112,7 +116,7 @@
 				
 				if(count === 3) {
 					//winBox.html(result);
-					endSpin(wheels, result, winBox);
+					endSpin(wheels, result, winBox, creditBox);
 				  count = 0;
 				  result = [];
 			    }
